@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+    <!-- Add TextView to display the date -->
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:text="Pokaż datę"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <!-- Add CalenderView to display the Calender -->
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="406dp"
+        android:layout_height="360dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="5dp"></CalendarView>
+
+</RelativeLayout>

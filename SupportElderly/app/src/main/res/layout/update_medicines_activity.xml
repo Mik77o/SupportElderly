@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtDose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="20"
+        android:fontFamily="sans-serif-light"
+        android:hint="Dawka"
+        android:inputType="textPersonName"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtDose"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:ems="20"
+        android:fontFamily="sans-serif-light"
+        android:hint="Nazwa leku"
+        android:inputType="textPersonName"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtMedicine"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-209dp"
+        android:ems="20"
+        android:fontFamily="sans-serif-light"
+        android:hint="Częstotliwość"
+        android:inputType="textPersonName"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDose"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="96dp"
+        android:background="#c8e4d6"
+        android:fontFamily="sans-serif-light"
+        android:text="Zaktualizuj"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="171dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/medicine_icon" />
+</RelativeLayout>
